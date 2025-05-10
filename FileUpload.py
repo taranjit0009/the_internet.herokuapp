@@ -31,8 +31,7 @@ def upload_file():
     action.move_to_element(ele).click(ele).send_keys(actual_file).perform()
     time.sleep(5)
     #driver.find_element(By.ID,"drag-drop-upload").send_keys(actual_file)
-
-#upload_file()
+upload_file()
 
 
 def even_generator():
