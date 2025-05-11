@@ -18,7 +18,7 @@ def table_one():
     name = "Smith"
 
     #Child to parent traverse
-    get_name_smith = driver.find_element(By.XPATH,"//a[text()='edit']/ancestor::table[@id='table1']//tr//td[contains(.,'Smith')]").text
+    get_name_smith = driver.find_element(By.XPATH,f"//a[text()='edit']/ancestor::table[@id='table1']//tr//td[contains(.,'{name}')]").text
     print(get_name_smith)
     """
     #child to parent and Parent to child traverse combination, 
